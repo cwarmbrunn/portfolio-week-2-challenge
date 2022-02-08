@@ -1,12 +1,12 @@
-# Employee X Portfolio Site
+# Professional Portfolio Site
 
 1. Project Title:
 
-   Employee X Portfolio Site
+Professional Portfolio Site
 
 2. Project Description:
 
-   Designing a site for employee "X"
+   Designing a site for myself!
 
 3. Installation:
 
