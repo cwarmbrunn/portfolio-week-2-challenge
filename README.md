@@ -14,7 +14,7 @@
 
 4. How to Run Project:
 
-   Head over to https://cwarmbrunn.github.io/portfolio-week-2-challenge/to view the page live!
+   Head over to https://cwarmbrunn.github.io/portfolio-week-2-challenge/ to view the page live!
 
 5. Screenshots:
 

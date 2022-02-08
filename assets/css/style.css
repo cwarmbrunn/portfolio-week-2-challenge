@@ -19,7 +19,6 @@ body {
 
 header {
   padding: 20px 40px;
-  background: var(--primary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -45,7 +44,7 @@ header h1 {
   font-size: 36px;
   color: var(--primary-color);
   margin: 0;
-  text-shadow: 0 0 10px rgba(0, 0 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0 0, 0.3);
 }
 
 header a {
@@ -67,7 +66,7 @@ header nav ul {
 
 header nav ul li a {
   padding: 10px 15px;
-  font-weight: lighter;
+  font-weight: bolder;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0 0, 0.5);
 }
@@ -81,7 +80,18 @@ header nav ul li a:hover {
 }
 
 /* Header and Navigation Bar Styles End */
+/* Main Section Styles Start */
+image {
+  justify-content: center;
+  align-items: flex-start;
+}
 
+.title-1,
+.title-2 {
+  color: var(--secondary-color);
+}
+
+/* Main Section Styles End */
 /* Footer Styles Start */
 
 footer {
@@ -95,7 +105,7 @@ footer {
 
 footer h4 {
   color: var(--primary-color);
-  font-size: 16px;
+  font-size: 1.55vw;
   margin: 0;
 }
 
@@ -142,7 +152,46 @@ section {
 
 /* Hero Styles End */
 
-/* Section Styling */
+/* Section Title Styling Starts */
+
+.section-title {
+  font-size: 52px;
+  color: var(--secondary-color);
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: var(--primary-color);
+}
+
+.secondary-border {
+  border-color: var(--tertiary-color);
+}
+
+/* Section Title Styles End */
+
+/* Misc. Utilities Begin  */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+/* Misc Utilities End */
 
 /* Media Query #1: For Smaller Desktop Screens and Smaller Devices */
 
@@ -173,6 +222,18 @@ section {
     text-align: center;
     width: 100%;
   }
+
+  .hero-cta {
+    width: 100%;
+  }
+
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
 }
 /* Media Query #1 End */
 
@@ -188,8 +249,8 @@ section {
 
 /* Media Query #3 */
 @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
+  .section-title {
+    width: 95%;
   }
 }
 /* Media Query #3 End */
