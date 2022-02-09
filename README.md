@@ -17,4 +17,5 @@ Professional Portfolio Site
    Head over to https://cwarmbrunn.github.io/portfolio-week-2-challenge/ to view the page live!
 
 5. Screenshots:
-   ![Screenshot of Horiseon website main page](./assets/images/Portfolio Site Screenshot.jpg)
+
+   ![A screenshot of my portfolio site](./assets/images/portfolio.jpg)
