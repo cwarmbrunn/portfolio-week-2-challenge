@@ -50,6 +50,7 @@ header h1 {
 header a {
   text-decoration: none;
   color: var(--primary-color);
+  border-bottom: var(--tertiary-color);
 }
 
 header nav {
@@ -76,16 +77,11 @@ header nav ul li a:hover {
   color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
-  border-bottom: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 /* Header and Navigation Bar Styles End */
 /* Main Section Styles Start */
-image {
-  justify-content: center;
-  align-items: flex-start;
-}
-
 .title-1,
 .title-2 {
   color: var(--secondary-color);
@@ -105,7 +101,7 @@ footer {
 
 footer h4 {
   color: var(--primary-color);
-  font-size: 1.55vw;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -126,32 +122,6 @@ section {
 }
 /* End Style for Section Tags */
 
-/* Hero Styles Start */
-.hero {
-  background-color: var(--tertiary-color);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-attachment: fixed;
-  background-position: 80%;
-}
-
-.hero-cta {
-  width: 100%;
-  text-align: center;
-  margin: 3.5%;
-  color: var(--primary-color);
-  text-shadow: 0 0 10px rgba(100, 100, 100, 0.3);
-}
-.hero-title {
-  background-color: rgba(100, 100, 100, 0.3);
-  color: black;
-}
-
-/* Hero Styles End */
-
 /* Section Title Styling Starts */
 
 .section-title {
@@ -168,20 +138,61 @@ section {
   border-color: var(--primary-color);
 }
 
-.secondary-border {
-  border-color: var(--tertiary-color);
-}
-
 /* Section Title Styles End */
 
-/* Misc. Utilities Begin  */
-.text-left {
-  text-align: left;
+/* Gallery Start */
+
+.gallery {
+  position: relative;
+  width: 50%;
 }
 
-.text-right {
-  text-align: right;
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.gallery:hover .image {
+  opacity: 0.2;
+}
+
+.gallery:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 16px 32px;
+  width: 100%;
+}
+
+.gallery:first-child {
+  width: 200%;
+}
+
+/* Gallery End */
+
+/* Misc. Utilities Begin  */
 
 .text-justify {
   text-align: center;
@@ -190,7 +201,9 @@ section {
 .flex-row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
+
 /* Misc Utilities End */
 
 /* Media Query #1: For Smaller Desktop Screens and Smaller Devices */
@@ -223,16 +236,15 @@ section {
     width: 100%;
   }
 
-  .hero-cta {
-    width: 100%;
-  }
-
-  .hero-cta {
-    text-align: center;
-  }
-
   .section-title {
     width: 80%;
+  }
+
+  .image,
+  .middle,
+  .text {
+    width: fit-content;
+    height: fit-content;
   }
 }
 /* Media Query #1 End */
@@ -243,6 +255,13 @@ section {
   section {
     padding: 30px 15px;
   }
+
+  .image,
+  .middle,
+  .text {
+    width: fit-content;
+    height: fit-content;
+  }
 }
 
 /* Media Query #2 End */
@@ -251,6 +270,13 @@ section {
 @media screen and (max-width: 575px) {
   .section-title {
     width: 95%;
+  }
+
+  .image,
+  .middle,
+  .text {
+    width: fit-content;
+    height: fit-content;
   }
 }
 /* Media Query #3 End */
