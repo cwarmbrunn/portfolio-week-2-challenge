@@ -142,6 +142,11 @@ section {
 
 /* Gallery Start */
 
+.work-items {
+  flex-wrap: flex;
+  display: flex;
+}
+
 .gallery {
   position: relative;
   width: 50%;
@@ -166,7 +171,6 @@ section {
   -ms-transform: translate(-50%, -50%);
   padding: 12px 24;
   text-align: center;
-  border-radius: 50px;
 }
 
 .gallery:hover .image {
