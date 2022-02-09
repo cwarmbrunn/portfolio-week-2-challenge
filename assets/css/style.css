@@ -22,8 +22,8 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-image: url("../images/gray\ header.png");
-  background-position: 80%;
+  background-color: var(--tertiary-color);
+  background-position: 100%;
   z-index: 9999;
 
   /* Safari Vendor Prefix */
@@ -43,7 +43,7 @@ header h1 {
   font-weight: bold;
   font-size: 36px;
   color: var(--primary-color);
-  margin: 0;
+  margin: 7px 0;
   text-shadow: 0 0 10px rgba(0, 0 0, 0.3);
 }
 
@@ -76,11 +76,13 @@ header nav ul li a:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 15px;
-  text-shadow: none;
+  text-shadow: 50px;
   border-bottom: 1px solid var(--tertiary-color);
+  transition: 0.5s ease;
 }
 
 /* Header and Navigation Bar Styles End */
+
 /* Main Section Styles Start */
 .title-1,
 .title-2 {
@@ -88,6 +90,7 @@ header nav ul li a:hover {
 }
 
 /* Main Section Styles End */
+
 /* Footer Styles Start */
 
 footer {
@@ -101,7 +104,6 @@ footer {
 
 footer h4 {
   color: var(--primary-color);
-  font-size: 16px;
   margin: 0;
 }
 
@@ -118,7 +120,7 @@ footer a {
 
 /* Style for Section Tags */
 section {
-  padding: 60px;
+  padding: 20px;
 }
 /* End Style for Section Tags */
 
@@ -155,7 +157,7 @@ section {
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
@@ -169,12 +171,12 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  padding: 12px 24;
+  padding: 12px 24px;
   text-align: center;
 }
 
 .gallery:hover .image {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .gallery:hover .middle {
@@ -184,10 +186,11 @@ section {
 .text {
   background-color: var(--primary-color);
   color: var(--tertiary-color);
-  font-size: 30px;
+  font-size: 1.55vw;
   font-weight: bolder;
   padding: 16px 32px;
   width: 100%;
+  line-height: 1.5;
 }
 
 .gallery:first-child {
@@ -206,6 +209,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  font-size: 20vw;
 }
 
 /* Misc Utilities End */
@@ -243,13 +247,6 @@ section {
   .section-title {
     width: 80%;
   }
-
-  .image,
-  .middle,
-  .text {
-    width: fit-content;
-    height: fit-content;
-  }
 }
 /* Media Query #1 End */
 
@@ -257,14 +254,7 @@ section {
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 30px 15px;
-  }
-
-  .image,
-  .middle,
-  .text {
-    width: fit-content;
-    height: fit-content;
+    padding: 35px 15px;
   }
 }
 
@@ -274,13 +264,6 @@ section {
 @media screen and (max-width: 575px) {
   .section-title {
     width: 95%;
-  }
-
-  .image,
-  .middle,
-  .text {
-    width: fit-content;
-    height: fit-content;
   }
 }
 /* Media Query #3 End */
