@@ -90,40 +90,6 @@ header nav ul li a:hover {
 }
 
 /* Main Section Styles End */
-
-/* Footer Styles Start */
-
-footer {
-  background: var(--tertiary-color);
-  width: 100%;
-  padding: 40px 35px;
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-footer h4 {
-  color: var(--primary-color);
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: left;
-}
-
-footer a {
-  color: var(--secondary-color);
-}
-
-/* Footer Styles End */
-
-/* Style for Section Tags */
-section {
-  padding: 20px;
-}
-/* End Style for Section Tags */
-
 /* Section Title Styling Starts */
 
 .section-title {
@@ -141,6 +107,12 @@ section {
 }
 
 /* Section Title Styles End */
+
+/* Style for Section Tags */
+section {
+  padding: 20px;
+}
+/* End Style for Section Tags */
 
 /* Gallery Start */
 
@@ -198,6 +170,32 @@ section {
 }
 
 /* Gallery End */
+/* Footer Styles Start */
+
+footer {
+  background: var(--tertiary-color);
+  width: 100%;
+  padding: 40px 35px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer h4 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: left;
+}
+
+footer a {
+  color: var(--secondary-color);
+}
+
+/* Footer Styles End */
 
 /* Misc. Utilities Begin  */
 
