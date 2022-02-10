@@ -90,6 +90,7 @@ header nav ul li a:hover {
 }
 
 /* Main Section Styles End */
+
 /* Section Title Styling Starts */
 
 .section-title {
@@ -143,12 +144,13 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  padding: 12px 24px;
+  padding: 12px 12px;
   text-align: center;
 }
 
 .gallery:hover .image {
   opacity: 0.1;
+  background-color: var(--primary-color);
 }
 
 .gallery:hover .middle {
@@ -156,11 +158,10 @@ section {
 }
 
 .text {
-  background-color: var(--primary-color);
-  color: var(--tertiary-color);
-  font-size: 1.55vw;
+  color: var(--primary-color);
+  font-size: 2vw;
   font-weight: bolder;
-  padding: 16px 32px;
+  padding: 32px 32px;
   width: 100%;
   line-height: 1.5;
 }
@@ -170,6 +171,15 @@ section {
 }
 
 /* Gallery End */
+
+/* Contact Me Styles Start */
+
+.contact {
+  color: var(--secondary-color);
+}
+
+/* Contact Me Styles Start */
+
 /* Footer Styles Start */
 
 footer {
