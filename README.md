@@ -1,21 +1,35 @@
-# Professional Portfolio Site
+**Project Title:**
 
-1. Project Title:
+Professional Portfolio Website
 
-Professional Portfolio Site
+---
 
-2. Project Description:
+**Project Description/Summary:**
 
-   Designing a site for myself!
+Designing a professional portfolio that will evolve as I learn more front-end development skills. This site will house my development work and will highlight my technical skills.
 
-3. Installation:
+---
 
-   You can clone this repo - no special instructions to load this!
+**Live Site:**
 
-4. How to Run Project:
+Head over to https://cwarmbrunn.github.io/professional-portfolio
+to view the page live!
 
-   Head over to https://cwarmbrunn.github.io/portfolio-week-2-challenge/ to view the page live!
+---
 
-5. Screenshots:
+**Technology Used:**
 
-   ![A screenshot of my portfolio site](./assets/images/portfolio.jpg)
+- HTML
+- CSS
+
+---
+
+**Installation:**
+
+You can clone this repo - no special instructions to load this!
+
+---
+
+**Screenshots:**
+
+![Screenshot of my portfolio main page](./assets/images/portfolio.jpg)
