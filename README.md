@@ -6,6 +6,8 @@ Professional Portfolio Website
 
 **Project Description/Summary:**
 
+Acted as Front End Developer. 
+
 Designing a professional portfolio that will evolve as I learn more front-end development skills. This site will house my development work and will highlight my technical skills.
 
 ---
