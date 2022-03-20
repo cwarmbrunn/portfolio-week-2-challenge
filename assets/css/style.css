@@ -47,6 +47,11 @@ header h1 {
   text-shadow: 0 0 10px rgba(0, 0 0, 0.3);
 }
 
+header h1 a:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 header a {
   text-decoration: none;
   color: var(--primary-color);
@@ -79,6 +84,7 @@ header nav ul li a:hover {
   text-shadow: 50px;
   border-bottom: 1px solid var(--tertiary-color);
   transition: 0.5s ease;
+  text-decoration: none;
 }
 
 /* Header and Navigation Bar Styles End */
