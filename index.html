@@ -10,7 +10,9 @@
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;1,300;1,400&display=swap");
     </style>
-
+    <!-- Bootstrap CDN Style Sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- CSS Style Sheet-->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Favicon-->
@@ -45,12 +47,12 @@
 <body>
     <section id="about-me" class="main">
         <div class="flex row">
-            <h2 class="section-title primary-border">
+            <h2 class="text-center fw-bold">
                 About
             </h2>
     </section>
 
-    <section id="about me" class="profile">
+    <section id="about me" class="profile mt-0">
         <div class="flex-row">
             <img src="./assets/images/Korilakkuma Mask.jpg"
                 alt="A small stuffed white bear (Korilakkuma) sitting on a white bed, wearing a white face mask and holding a Nintendo 3DS with Animal Crossing on the screen."
@@ -71,7 +73,7 @@
     <!-- Work Items Section Begins  -->
 
     <div class="work-items">
-        <h2 class="section-title primary-border">
+        <h2 class="text-center fw-bold">
             Work Items
         </h2>
     </div>
@@ -87,18 +89,14 @@
             <!-- First Project -->
 
             <div class="gallery">
-                <a href="https://cwarmbrunn.github.io/cat-name-generator/">
+                <a href="./cat-name-generator-page.html">
 
-                    <img src="./assets/images/cat-name-generator.jpg" alt="a screenshot of the Cat Name Generator site"
-                        class="image" style="width:100%">
+                    <img src="./assets/images/cat-name-generator-1.jpg"
+                        alt="a screenshot of the Cat Name Generator site" class="image" style="width:100%">
 
                     <div class="middle">
                         <div class="text">
                             <p>Cat Name Generator</p>
-                            <p><em><span class="title-1">Technologies Used: HTML, CSS, JavaScript, The Cat API, Random
-                                        User API, Tailwind CSS</em>
-                                </span></p>
-
                         </div>
                     </div>
                 </a>
@@ -109,7 +107,7 @@
             <!-- Second Project -->
 
             <div class="gallery">
-                <a href="https://cwarmbrunn.github.io/api-coding-quiz/">
+                <a href="./coding-quiz.html">
 
                     <img src="./assets/images/timed-quiz.jpg"
                         alt="a screenshot of a timed quiz site displaying a timer counting down and options for a API quiz question"
@@ -117,8 +115,7 @@
 
                     <div class="middle">
                         <div class="text">
-                            <p> Coding Quiz </p>
-                            <p><em><span class="title-1">Technologies Used: HTML, CSS, JavaScript</em> </span></p>
+                            <p> API Coding Quiz </p>
                         </div>
                     </div>
                 </a>
@@ -129,7 +126,7 @@
             <!-- Third Project -->
 
             <div class="gallery">
-                <a href="https://cwarmbrunn.github.io/weather-dashboard/">
+                <a href="./weather-dashboard.html">
 
                     <img src="./assets/images/weatherapp.jpg"
                         alt="a weather app displaying the weather of various cities and their five day forecast."
@@ -137,10 +134,7 @@
 
                     <div class="middle">
                         <div class="text">
-
                             <p>Weather App</p>
-                            <p><em><span class="title-1">Technologies Used: HTML, CSS, JavaScript, OpenWeather API,
-                                        Bootstrap, jQuery </em> </span></p>
                         </div>
                     </div>
                 </a>
@@ -148,28 +142,23 @@
     </section>
     <!-- Work Items Section End-->
 
+</body>
+
+<!-- Footer Start -->
+<footer>
     <!--Contact Me Begins -->
     <section id="contact" class="contact">
         <div>
             <div class="text-justify">
-                <h2 class="section-title primary-border">Contact</h2>
+                <h2 class="text-center">Contact</h2>
 
-                <p class="contact"> Want to work together? <br> <br>
-                    Let's connect <a href="https://www.linkedin.com/in/christina-warmbrunn/"
-                        style="text-decoration:none">here!</a>
-
-                    </a>✨ </p>
+                <p class="title-2 text-center"> Want to work together?</p>
+                <p class="title-2 text-center">Let's connect <a href="https://www.linkedin.com/in/christina-warmbrunn/"
+                        class="text-decoration-none" target="_blank"><strong>here</strong></a>! ✨ </p>
             </div>
         </div>
     </section>
-
-</body>
-<!-- Contact Me Ends -->
-
-<!-- Footer Start -->
-<footer>
-    <h4>❤️ Made with love in Detroit </h4>
-    <div> &copy; 2022 Christina Warmbrunn </div>
+    <!-- Contact Me Ends -->
 </footer>
 <!-- Footer Ends -->
 

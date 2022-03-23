@@ -86,6 +86,13 @@ header nav ul li a:hover {
   transition: 0.5s ease;
   text-decoration: none;
 }
+h3 {
+  color: var(--secondary-color);
+}
+
+.links {
+  color: var(--primary-color);
+}
 
 /* Header and Navigation Bar Styles End */
 
@@ -95,38 +102,21 @@ header nav ul li a:hover {
   color: var(--secondary-color);
 }
 
-/* Main Section Styles End */
-
-/* Section Title Styling Starts */
-
-.section-title {
-  font-size: 52px;
-  color: var(--secondary-color);
-  border-bottom: 3px solid var(--secondary-color);
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
-.primary-border {
-  border-color: var(--primary-color);
-}
-
-/* Section Title Styles End */
-
 /* Style for Section Tags */
 section {
   padding: 20px;
 }
 /* End Style for Section Tags */
 
-/* Gallery Start */
-
-.work-items {
-  flex-wrap: flex;
-  display: flex;
+/* Title for Projects */
+.title {
+  margin-top: 20px;
 }
+
+.role {
+  color: var(--secondary-color);
+}
+/* Gallery Start */
 
 .gallery {
   position: relative;
@@ -191,10 +181,6 @@ section {
 footer {
   background: var(--tertiary-color);
   width: 100%;
-  padding: 40px 35px;
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 footer h4 {
@@ -202,13 +188,11 @@ footer h4 {
   margin: 0;
 }
 
-footer div {
-  line-height: 1.5;
-  text-align: left;
-}
-
 footer a {
   color: var(--secondary-color);
+}
+footer a:hover {
+  color: var(--primary-color);
 }
 
 /* Footer Styles End */
